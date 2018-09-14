@@ -26,10 +26,11 @@
     "src"
   ],
   "dependencies": {
+    "@eclipse-che/workspace-client": "latest",
     "@theia/core": "0.3.14",
     "@theia/mini-browser": "0.3.14",
     "@theia/task": "0.3.14",
-    "@eclipse-che/workspace-client": "latest",
+    "@theia/variable-resolver": "0.3.14",
     "reconnecting-websocket": "3.2.2"
   },
   "devDependencies": {
@@ -39,9 +40,9 @@
     "mocha": "5.0.4",
     "rimraf": "2.6.2",
     "sinon": "4.4.2",
-    "typescript": "2.7.2",
     "ts-mockito": "2.3.0",
-    "ts-node": "5.0.1"
+    "ts-node": "5.0.1",
+    "typescript": "2.9.2"
   },
   "scripts": {
     "prepare": "yarn run clean && yarn run build",
@@ -55,8 +56,5 @@
       "frontend": "lib/browser/che-frontend-module",
       "backend": "lib/node/che-backend-module"
     }
-  ],
-  "resolutions": {
-    "node-pty": "0.7.4"
-  }
+  ]
 }
